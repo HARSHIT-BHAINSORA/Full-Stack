@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML5 Tags </h1>
+        <h2>Video</h2>
+            <video width="320" height="240" controls>
+                <source src="movies.mp4" type="video/mp4">
+          </video>
+        <hr/>
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="horse.mp3" type="audio/mpeg">
+          </audio>
+        <hr/>
+        <h2>Header</h2>
+            <header>
+                    <h2>Hi I am Harshit</h2>
+                    <p>How are you</p>
+            </header>
+        <hr/>
+        <h2>Footer</h2>
+            <footer>
+                <p>Author: Harshit</p>
+                <p><a href="mailto:hege@example.com">harshu@example.com</a></p>
+            </footer>
+        <hr/>
+        <h2>Nav</h2>
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/python/">Python</a>
+            </nav>
+        <hr/>
+        <h2>Embed</h2>
+            <embed type="image/jpg" src="sumit.jpg" width="200" height="200">
+        <hr/>
+        <h2>Datalist</h2>
+            <form>
+                <label for="browser">Choose your browser from the list:</label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+                </datalist>
+                <input type="submit">
+            </form>
+        <hr/>
+        <h2>Bdi</h2>
+            <ul>
+                <li>User <bdi>hrefs</bdi>: 60 points</li>
+                <li>User <bdi>jdoe</bdi>: 80 points</li>
+                <li>User <bdi>إيان</bdi>: 90 points</li>
+            </ul>
+        <hr/>
+        <h2>Article</h2>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+          </article>
+          
+          <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+          </article>
+        <hr/>
+        <h2>Output</h2>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="a" value="50">
+                +<input type="number" id="b" value="25">
+                =<output name="x" for="a b"></output>
+            </form>
+    </body>
+</html>
