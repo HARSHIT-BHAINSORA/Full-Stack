@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Customer Profile</title>
     <style>
-        lable{
+        lable , select{
             margin : 50px;
         }
 
@@ -28,39 +28,27 @@
     </style>
 </head>
 <body>
-    <fieldset>
-        <legend>Basic Information</legend>
         <lable>Full Name :</lable>
         <input type = "text"  placeholder="Name"/><br/>
-        <lable>Brith Date :</lable>
-        <input type = "Date" /><br/>
-        <lable>Gender : </lable>
-        <input type = "radio" value = "Male" name = "Gender">Male</input>
-        <input type = "radio" value = "Female" name = "Gender"> Female<br />
         <lable>Address : </lable>
         <textarea></textarea><br/>
-        <lable>Phone Number:</lable>
-        <input type = "tel" placeholder="+91..."/><br/>
-    </fieldset>
-
-    <fieldset style="margin: 10px;">
-        <legend>Extra Information</legend>
-        <label>Interest : </label>
-        <input type = "checkbox" name = "interest1" />
-        <label>Books</label> 
-        <input type = "checkbox" name = "interest2" />
-        <label>Movies</label> 
-        <input type = "checkbox" name = "interest3" />
-        <label>VideoGames</video></label><br>
-        <label>Favorite Color : </label>
-        <input type = "color" />
-        </fieldset> 
-        
-        
-    </fieldset>
-    
-    <button type="submit">Send data</button>
-    <button type="submit">Reset form</button>
-
+        <label>Age :</label>
+        <input type="number" /><br />
+        <lable>Gender : </lable>
+        <input type = "radio" value = "Male" name = "Gender">Male
+        <input type = "radio" value = "Female" name = "Gender"> Female<br />
+        <label>Room type :</label>
+        <input type = "radio"  name = "rooms">AC
+        <input type = "radio"  name = "rooms"> Non - AC
+        <input type = "radio" name = "rooms">Deluxe <br />
+        <label>Type of Payment</label>
+            <select >
+            <option value="Cash">Cash</option>
+            <option value="Credit">Credit Card</option>
+            <option value="Debit">Debit Card</option>
+            <option value="Coupons">Coupons</option>
+            </select>
+        <br />
+        <button type="submit">Submit</button>    
 </body>
 </html>
