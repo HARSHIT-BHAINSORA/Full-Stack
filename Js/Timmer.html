@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>setTimeOut and setInterval</title>
+    </head>
+    <body>
+        <input id = "ip_box">
+        <button onclick="start_timer()">Start Timer</button>
+        <button onclick="stop_timer()">Stop Timer</button>
+    </body>
+    <script>
+
+        var cnt = 10;
+        var time;
+        
+        function start_timer()
+        {
+            document.getElementById("ip_box").value = cnt;
+            time = setInterval(myfunc , 1000);
+        }
+
+        function myfunc()
+        {
+            cnt--;
+            
+            if(cnt == 0){
+                document.getElementById("ip_box").value = "done"
+                clearInterval(time);
+            }
+            else    
+                document.getElementById("ip_box").value = cnt;
+        }
+
+        function stop_timer(){
+            clearInterval(time);
+        }
+
+    </script>
+</html>
