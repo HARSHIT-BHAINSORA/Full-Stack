@@ -1,0 +1,31 @@
+
+header{
+    display:block;
+    font-weight:bolder;
+    text-align:center;
+    font-size:30px;
+    background-color: green;
+    color: white;
+    margin-bottom: 10px;
+}
+
+book , title , author , isbn , publisher , edition ,  price{
+    display:block;
+    text-align:center;
+}
+
+book{
+    display:block;
+    font-weight:bolder;
+    text-align:center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: green;
+    margin: 0px 10px;
+    margin-bottom: 5px;
+}
+
+author{
+    color: white;
+    font-weight: larger;
+}
