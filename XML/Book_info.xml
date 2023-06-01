@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+ <!-- DTD -->
+<!DOCTYPE library [
+
+    <!ELEMENT library (book*)>
+    <!ELEMENT book (title , author , isbn , publisher , edition , price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT isbn (#PCDATA)>
+    <!ELEMENT publisher (#PCDATA)>
+    <!ELEMENT edition (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+
+<library>
+    <book>
+        <title>Three man in a boat</title>
+        <author>Sumit</author>
+        <isbn>2319239123918219</isbn>
+        <publisher>Shiva Publishing</publisher>
+        <edition>First</edition>
+        <price>290.00</price>
+    </book>
+    
+    <book>
+        <title>Atomic Habits</title>
+        <author>James Clear</author>
+        <isbn>834892493829838</isbn>
+        <publisher>London Publishing</publisher>
+        <edition>Second</edition>
+        <price>399.00</price>
+    </book>
+
+    <book>
+        <title>Last Hour</title>
+        <author>Harshit</author>
+        <isbn>349203482034234</isbn>
+        <publisher>Duun Publishing</publisher>
+        <edition>First</edition>
+        <price>199</price>
+    </book>
+</library>
