@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library System</title>
+        <style>
+            h2,h3{
+                text-align: center;
+            }
+            
+            table , tr, td{
+                border : 3px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                padding: 10px;
+            }
+            table{
+                width: 60%;
+                margin-left: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Library Management System</h2>
+        <hr>
+        <h3>Enter the Records of a Book</h3>
+        <form action="insert.php" method="post">
+            <table>
+                <tr>
+                    <td>Accession Number of a Book - </td>
+                    <td><input type="number" name="acc_no" required></td>
+                </tr>
+
+                <tr>
+                    <td>Title of a Book - </td>
+                    <td><input type="text" name="title" required></td>
+                </tr>
+                
+                <tr>
+                    <td>Author of a Book - </td>
+                    <td><input type="text" name="author" required></td>
+                </tr>
+                
+                <tr>
+                    <td>Edition of a Book - </td>
+                    <td><input type="text" name="edition" required></td>
+                </tr>
+
+                <tr>
+                    <td>Publisher of a Book - </td>
+                    <td><input type="text" name="publisher" required></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
