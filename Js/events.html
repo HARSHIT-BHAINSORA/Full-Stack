@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>telephone</title>
+    </head>
+    <body>
+        <h1>Invert on mouseover and mouseout</h1>
+        <img onmouseover="invert_image()" onmouseout="revert_image()" src="https://images.pexels.com/photos/4652275/pexels-photo-4652275.jpeg?auto=compress&cs=tinysrgb&w=600" alt ="" id = "image"/>
+    </body>
+    <script>
+        function invert_image(){
+            document.getElementById("image").style.filter = "invert(100%)";
+        }
+
+        function revert_image(){
+            document.getElementById("image").style.filter = "invert(0%)";
+        }
+
+    </script>
+</html>
