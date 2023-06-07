@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>telephone</title>
+    </head>
+    <body>
+        <label>Enter Phone number [in the form(555) 555-5555]:</label>
+        <input type = "text" id = "tel" maxlength="14">
+        <input type ="submit" value = "Submit" onclick="validation()">
+        <input type = "text"  id = "code">
+        <input type = "text" id = "token">
+    </body>
+    <script>
+        function validation(){
+            var number = document.getElementById("tel").value;
+
+            if(number.charAt(0) != "(" || number.charAt(4) != ")" || number.charAt(5) != " " || number.charAt(9) != "-"){
+                alert("Invalid Format...");
+                return ;
+            }
+
+            for(var i = 0; i < 14 ; i++)
+            {
+                if(i == 0 || i == 4 || i == 5 || i == 9)
+                    continue;
+                else if(isNaN(number.charAt(i))){
+                    alert("Invalid Format hi...");
+                    return;
+                }     
+            }
+
+            // it split like this arr = ["555" , "555-5555"];
+            var arr = number.split(" ");
+            document.getElementById("code").value = arr[0];
+            
+            // it split like this arr1 = ["555" , "5555"];
+            var arr1 = arr[1].split("-");
+            document.getElementById("token").value = arr1.join("-");
+        }
+    </script>
+</html>
