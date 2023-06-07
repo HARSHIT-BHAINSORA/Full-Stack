@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B'day Day</title>
+    </head>
+    <body>
+        <input type = "date" id = "bday_date">
+        <input type ="submit" value = "Submit" onclick="cal_day()">
+        <input type = "text" placeholder="Your B'day day!!!" id = "day">
+    </body>
+    <script>
+
+        function cal_day(){
+            var birthdate = document.getElementById("bday_date").value;
+            var daysOfWeek = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];  
+            var date = new Date(birthdate);
+            
+            var day_week = daysOfWeek[date.getDay()];
+            document.getElementById("day").value = day_week; 
+
+        }
+    </script>
+</html>
